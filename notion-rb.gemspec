@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "A Ruby client that uses the Notion API easily."
   spec.homepage      = "https://github.com/Ven0802/notion-rb"
   spec.license       = "MIT"
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Ven0802/notion-rb/notion.rb"
