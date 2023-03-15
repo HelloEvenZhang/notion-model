@@ -15,7 +15,7 @@ require "irb"
 
 def reload
   # reload lib
-  Dir.glob("#{File.expand_path("lib", __dir__)}/**/*.rb").each { |f| load(f) }
+  Dir.glob("#{File.expand_path("../lib", __dir__)}/**/*.rb").each { |f| load(f) }
   true
 end
 
