@@ -34,9 +34,14 @@ end
 database = Notion::Database.find(database_id)
 pages = database.pages
 
-cycle_pages = pages.where(frequency: 'cycle')
+# 把提供的选项转换为等价的JSON Query结构体
+# 触发Http请求并从Response中检索对应的结果
+# 为每个查询结果实例化对应的模型对象
+some_pages = pages.where(options)
 page = cycle_pages.first
 
+# 由于不同Database下的Page都可能有不同的属性
+# 因此每个Page实例中的属性需要动态生成
 page.attributes
 page.update(frequency: 'once')
 
