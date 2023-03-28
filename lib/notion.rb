@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "notion/version"
+require 'notion/configurable'
+require 'notion/error'
+require 'notion/http_client'
+require 'notion/version'
 
 module Notion
-  class Error < StandardError; end
+  extend Configurable
 end
