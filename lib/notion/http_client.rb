@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
-require 'faraday'
+require "faraday"
 
-require 'notion/endpoints/database_methods'
-require 'notion/endpoints/page_methods'
+require "notion/endpoints/database_methods"
+require "notion/endpoints/page_methods"
 
 module Notion
+  # For Http Client
   class HttpClient
-    extend Endpoints::DatabaseMethods, Endpoints::PageMethods
+    extend Endpoints::DatabaseMethods
+    extend Endpoints::PageMethods
 
     class << self
       def default_connection
