@@ -5,6 +5,9 @@ module Notion
     module Endpoints
       # Notion::Http::Client.new.retrieve_a_page(page_id)
       module PageMethods
+        def retrieve_a_page(page_id)
+          get("pages/#{page_id}")
+        end
       end
     end
   end

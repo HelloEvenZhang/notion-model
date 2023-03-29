@@ -1,6 +1,6 @@
 # Notion::Rb
 
-为了自动化管理Notion开发的小工具，让处理Notion中的Database和Page的数据变得轻松简单
+一个能让你像Rails一样增删改查Notion中的Databases和Pages的RubyGem
 
 ## 安装
 

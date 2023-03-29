@@ -7,14 +7,14 @@ Gem::Specification.new do |spec|
   spec.version       = Notion::VERSION
   spec.authors       = ["even.z"]
   spec.email         = ["383490032@qq.com"]
-  spec.summary       = "A tool designed to automate Notion management, simplifying the handling of data from Notion's databases and pages."
+  spec.summary       = "A ruby gem that allows you to read, write, and update Notion databases and pages like Rails."
   spec.homepage      = "https://github.com/Ven0802/notion-rb"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Ven0802/notion-rb/notion.rb"
-  spec.metadata["changelog_uri"] = "https://github.com/Ven0802/notion-rb/notion.rb"
+  spec.metadata["changelog_uri"] = "https://github.com/Ven0802/notion-rb/releases"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject do |f|
