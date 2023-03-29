@@ -1,6 +1,6 @@
 # Notion::Rb
 
-为了自动化管理Notion开发的小工具，主要用于处理Notion中的Database和Page的数据
+为了自动化管理Notion开发的小工具，让处理Notion中的Database和Page的数据变得轻松简单
 
 ## 安装
 
@@ -27,11 +27,9 @@ bundle install
 # 先做好必要配置
 Notion.config.token = 'YOUR_NOTION_TOKEN'
 
-# 可选配置
+# 或者
 Notion.configure do |config|
   config.token = "YOUR_NOTION_TOKEN"
-  config.base_url = "NOTION_BASE_URL"
-  config.version = "NOTION_VERSION"
 end
 
 # 参考ActiveRecord处理数据的方法，以面向对象的方式操作数据

@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
-require "notion/configurable"
-require "notion/error"
-require "notion/http_client"
-require "notion/version"
+require "faraday"
+
+require_relative "notion/configurable"
+require_relative "notion/error"
+require_relative "notion/http/client"
+require_relative "notion/version"
 
 module Notion
   extend Configurable

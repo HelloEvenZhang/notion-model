@@ -17,11 +17,13 @@ module Notion
 
     # Access Notion.config to get configurations
     class Configuration
-      attr_accessor :token, :base_url, :version
+      ATTRIBUTES = %i[token endpoint timeout].freeze
+
+      attr_accessor(*ATTRIBUTES)
 
       def initialize
-        @base_url = "https://api.notion.com/v1"
-        @version = "2022-06-28"
+        @endpoint = "https://api.notion.com/v1"
+        @timeout = 60
       end
     end
   end
