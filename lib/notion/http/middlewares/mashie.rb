@@ -4,7 +4,7 @@ module Notion
   module Http
     module Middlewares
       # A middleware that mashie response
-      class Mashie < Hashie::Mash
+      class Mashie < ::Hashie::Mash
         def to_s
           keys.sort_by(&:to_s).map do |key|
             "#{key}=#{self[key]}"
