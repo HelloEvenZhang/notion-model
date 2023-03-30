@@ -23,7 +23,7 @@ module Notion
 
       def initialize
         @endpoint = "https://api.notion.com/v1"
-        @timeout = 60
+        @timeout = 20
       end
     end
   end

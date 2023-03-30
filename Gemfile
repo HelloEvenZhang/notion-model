@@ -12,3 +12,5 @@ gem "rspec", "~> 3.2"
 gem "rubocop", "~> 1.7"
 
 gem "faraday", "~> 2.7"
+
+gem "faraday-mashify", "~> 0.1.1"

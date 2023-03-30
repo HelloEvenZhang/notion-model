@@ -3,6 +3,7 @@ PATH
   specs:
     notion-rb (0.1.0)
       faraday (~> 2.7)
+      faraday-mashify (~> 0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -12,7 +13,11 @@ GEM
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
+    faraday-mashify (0.1.1)
+      faraday (~> 2.0)
+      hashie
     faraday-net_http (3.0.2)
+    hashie (5.0.0)
     json (2.6.2)
     parallel (1.22.1)
     parser (3.2.1.0)
@@ -51,13 +56,14 @@ GEM
     unicode-display_width (2.3.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-unknown
   x86_64-darwin-20
   x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
   faraday (~> 2.7)
+  faraday-mashify (~> 0.1.1)
   notion-rb!
   rake (~> 13.0)
   rspec (~> 3.2)
