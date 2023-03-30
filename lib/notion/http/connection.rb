@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "middlewares/raise_error"
-require_relative "middlewares/mashie"
-
 module Notion
   module Http
     # Initialize a ::Faraday::Connection

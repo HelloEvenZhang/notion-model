@@ -4,7 +4,7 @@ module Notion
   module Http
     module Middlewares
       # A middleware that raise Notion::Errors::HttpError
-      class RaiseError < ::Faraday::Response::Json
+      class RaiseError < ::Faraday::Middleware
         def on_complete(env)
           return if env.success?
 

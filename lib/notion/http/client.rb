@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "connection"
-require_relative "request"
-require_relative "endpoints/database_methods"
-require_relative "endpoints/page_methods"
-
 module Notion
   module Http
     # For http request and response
