@@ -2,6 +2,7 @@
 
 require "faraday"
 require "faraday/mashify"
+require "dotenv/load"
 
 require_relative "notion/version"
 require_relative "notion/configurable"

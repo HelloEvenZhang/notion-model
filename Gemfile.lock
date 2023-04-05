@@ -2,14 +2,23 @@ PATH
   remote: .
   specs:
     notion-rb (0.1.0)
+      dotenv
       faraday (~> 2.7)
       faraday-mashify (~> 0.1.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.8.2)
+      public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
+    crack (0.4.5)
+      rexml
+    debug (1.7.1)
+      irb (>= 1.5.0)
+      reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    dotenv (2.8.1)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -17,14 +26,20 @@ GEM
       faraday (~> 2.0)
       hashie
     faraday-net_http (3.0.2)
+    hashdiff (1.0.1)
     hashie (5.0.0)
+    io-console (0.6.0)
+    irb (1.6.2)
+      reline (>= 0.3.0)
     json (2.6.2)
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
+    public_suffix (5.0.1)
     rainbow (3.1.1)
-    rake (13.0.6)
     regexp_parser (2.7.0)
+    reline (0.3.2)
+      io-console (~> 0.5)
     rexml (3.2.5)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
@@ -54,20 +69,26 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     unicode-display_width (2.3.0)
+    vcr (6.1.0)
+    webmock (3.18.1)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x64-unknown
   x86_64-darwin-20
   x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
-  faraday (~> 2.7)
-  faraday-mashify (~> 0.1.1)
+  debug
   notion-rb!
-  rake (~> 13.0)
   rspec (~> 3.2)
   rubocop (~> 1.7)
+  vcr
+  webmock
 
 BUNDLED WITH
    2.3.3

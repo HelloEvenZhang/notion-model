@@ -22,6 +22,7 @@ module Notion
       attr_accessor(*ATTRIBUTES)
 
       def initialize
+        @token = ENV["NOTION_API_TOKEN"]
         @endpoint = "https://api.notion.com/v1"
         @timeout = 20
       end

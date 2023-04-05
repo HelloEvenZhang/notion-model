@@ -9,8 +9,14 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 Layout/LineLength:
-  Max: 120
+  Max: 128
 
 Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
   Enabled: false

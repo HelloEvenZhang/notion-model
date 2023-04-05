@@ -27,6 +27,8 @@ module Notion
       private
 
       def request(method, path, options)
+        raise Notion::Errors::MissingTokenError if token.nil?
+
         response = connection.send(method) do |request|
           case method
           when :get, :delete
