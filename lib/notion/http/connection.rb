@@ -22,7 +22,6 @@ module Notion
 
             ::Faraday::Connection.new(endpoint, options) do |builder|
               builder.use Notion::Http::Middlewares::RaiseError
-              builder.use ::Faraday::Mashify::Middleware, mash_class: Notion::Http::Middlewares::Mashie
               builder.use ::Faraday::Response::Json
             end
           end

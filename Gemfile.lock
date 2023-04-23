@@ -4,7 +4,6 @@ PATH
     notion-rb (0.1.0)
       dotenv
       faraday (~> 2.7)
-      faraday-mashify (~> 0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -22,12 +21,8 @@ GEM
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
-    faraday-mashify (0.1.1)
-      faraday (~> 2.0)
-      hashie
     faraday-net_http (3.0.2)
     hashdiff (1.0.1)
-    hashie (5.0.0)
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
@@ -76,7 +71,7 @@ GEM
       hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-unknown
   x64-unknown
   x86_64-darwin-20
   x86_64-darwin-21

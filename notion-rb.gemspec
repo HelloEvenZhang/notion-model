@@ -27,7 +27,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "dotenv"
   spec.add_dependency "faraday", "~> 2.7"
-  spec.add_dependency "faraday-mashify", "~> 0.1.1"
   spec.add_development_dependency "debug"
   spec.add_development_dependency "rspec", "~> 3.2"
   spec.add_development_dependency "rubocop", "~> 1.7"
