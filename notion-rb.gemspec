@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Notion::VERSION
   spec.authors       = ["even.z"]
   spec.email         = ["383490032@qq.com"]
-  spec.summary       = "A ruby gem that allows you to read, write, and update Notion databases and pages like Rails."
+  spec.summary       = "A ruby gem that allows you to read, write, and update Notion databases and pages like ActiveModel."
   spec.homepage      = "https://github.com/Ven0802/notion-rb"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
