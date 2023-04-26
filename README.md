@@ -1,6 +1,6 @@
 # Notion::Rb
 
-一个能让你像Rails一样增删改查Notion中的Databases和Pages的RubyGem
+一个能让你像ActiveModel一样增删改查Notion中的Databases和Pages的RubyGem
 
 ## 安装
 
